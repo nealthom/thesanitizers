@@ -12,11 +12,30 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+.header {
+  height: 85vh;
   background-image: linear-gradient(
     to right bottom,
     rgba(1, 45, 120, 0.8),
     rgba(2, 95, 180, 0.8)
   );
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  color: yellow;
+  letter-spacing: 0.5rem;
+  padding-top: 2rem;
 }
 
 .container {
@@ -30,6 +49,67 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.masks {
+  position: relative;
+  height: 75vh;
+  padding: 2rem;
+}
+.masks-ad {
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mask-heading {
+  position: absolute;
+  top: 10%;
+}
+.mask-heading > h2 {
+  color: red;
+}
+
+/* about section */
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 10rem 0;
+  /* margin-top: -20vh; */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(1, 45, 120, 0.8),
+    rgba(2, 95, 180, 0.8)
+  );
+  background-size: cover;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15vh);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15vh);
+}
+
+.about-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.corona-decoration {
+  color: red;
+  text-transform: uppercase;
+}
+.about-text > p {
+  margin-bottom: 2rem;
+}
+.about-image {
+  width: 85vw;
 }
 
 /* footer */
@@ -62,6 +142,28 @@ footer > p > span {
   display: inline-block;
 }
 
+/* utilities */
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
 @media (min-width: 600px) {
   .container {
     height: 100vh;
@@ -69,6 +171,30 @@ footer > p > span {
   }
   .ad {
     padding: 2rem;
-    width: 50%;
+    width: 40%;
+  }
+
+  .masks {
+    height: 85vh;
+  }
+
+  .mask-heading {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .masks-ad {
+    width: 40%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .heading-secondary {
+    padding-top: 7rem;
+  }
+  .about-image {
+    width: 55vw;
   }
 }
