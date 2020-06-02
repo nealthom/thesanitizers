@@ -171,7 +171,7 @@ footer > p > span {
   }
   .ad {
     padding: 2rem;
-    width: 40%;
+    width: 50%;
   }
 
   .masks {
@@ -184,7 +184,7 @@ footer > p > span {
   }
 
   .masks-ad {
-    width: 40%;
+    width: 50%;
     position: absolute;
     top: 60%;
     left: 50%;
