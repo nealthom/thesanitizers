@@ -198,3 +198,42 @@ footer > p > span {
     width: 55vw;
   }
 }
+
+@media (min-width: 1200px) {
+  .container {
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .header {
+    height: 140vh;
+    padding: 2rem;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100%);
+  }
+
+  .masks {
+    height: 105vh;
+  }
+
+  .mask-heading {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .masks-ad {
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .heading-secondary {
+    font-size: 7rem;
+  }
+  .about-image {
+    width: 55vw;
+  }
+}
